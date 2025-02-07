@@ -10,4 +10,7 @@ int main (){
      printf(" o número é par.\n");
 
 }
+       else {
+     printf("número é impar\n");
+}
 }
