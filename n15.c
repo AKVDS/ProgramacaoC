@@ -20,13 +20,12 @@ int main (){
     scanf ("%f", &nota1);
     printf ("Digite segunda nota: \n");
     scanf ("%f", &nota2);
-    printf("Digite terceira nota: \n");
-    scanf("%f", &nota3);
+    
 
     
     //TESTAR SE A NOTA >= 0 OU SE É <= 10
-    if ((nota1 >= 0 && nota1 <= 10) && (nota2 >= 0 && nota2 <= 10) && (nota3 >= 0 && nota3 <= 10)){
-        media = (nota1 + nota2 + nota3) / 3;
+    if ((nota1 >= 0 && nota1 <= 10) && (nota2 >= 0 && nota2 <= 10)){
+        media = (nota1 + nota2) / 2;
         printf("A média é: %.2f\n", media);
     } else {
         printf("Entrada com valores errados de nota. \n");
@@ -34,6 +33,9 @@ int main (){
     } 
     case 2:
     printf ("2. Determinar Status. \n");
+    printf("Entrar com a média: \n");
+    scanf("%f", &media); 
+    media >= 5 ? printf ("Aprovado. \n") : printf("reprovado. \n");
         break;
     case 3:
     printf ("3. Sair. \n");
